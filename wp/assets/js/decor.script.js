@@ -15,8 +15,6 @@ function closeMenu(){navbar.classList.remove('menu-open');navMenu.classList.remo
     menuOverlay.classList.remove('active');
     document.body.style.overflow = '';
 }
-
-
 function smoothScroll(e,targetId){e.preventDefault();
     if(targetId === '#') return; const targetElement = document.querySelector(targetId);
     if(targetElement){ window.scrollTo({top:targetElement.offsetTop -80,behavior:'smooth'});}
